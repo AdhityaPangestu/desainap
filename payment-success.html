@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pembayaran - Designap</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="navbar">
+      <div class="logo">Design<span>ap</span></div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="packages.html">Paket</a>
+        <a href="cart.html" class="cart-link">
+          Keranjang <span class="cart-badge" id="cartCount" aria-label="Jumlah item">0</span>
+        </a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-header reveal">
+          <h2>Status Pembayaran</h2>
+          <p>Jika kamu baru selesai bayar di Pakasir, simpan detail di bawah ini.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="summary-row">
+            <span>Order ID</span>
+            <strong id="successOrderId">-</strong>
+          </div>
+          <div class="summary-row" style="margin-top:8px;">
+            <span>Nominal</span>
+            <strong id="successAmount">-</strong>
+          </div>
+          <div class="summary-row" style="margin-top:8px;">
+            <span>Nama</span>
+            <strong id="successName">-</strong>
+          </div>
+          <div class="summary-row" style="margin-top:8px;">
+            <span>No. WhatsApp</span>
+            <strong id="successPhone">-</strong>
+          </div>
+
+          <div class="summary-divider"></div>
+
+          <p class="hint">
+            Catatan: halaman ini dibuat sebagai tujuan tombol <em>"Kembali ke halaman merchant"</em> di Pakasir.
+            Untuk verifikasi otomatis, biasanya dibutuhkan webhook / API (server). Kalau kamu nanti punya backend,
+            aku bisa bantu bikin endpoint webhook juga.
+          </p>
+
+          
+          <div class="cart-actions" style="margin-top:16px; flex-wrap:wrap;">
+            <a class="btn primary" id="waConfirmBtn" href="#" target="_blank" rel="noopener">Kirim Konfirmasi via WhatsApp</a>
+            <a class="btn ghost" href="index.html">Kembali ke Home</a>
+            <a class="btn ghost" href="packages.html">Lihat Paket Lain</a>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Designap. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

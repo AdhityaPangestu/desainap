@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paket Desain - Designap</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="navbar">
+      <div class="logo">Design<span>ap</span></div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="packages.html" class="active">Paket</a>
+        <a href="cart.html" class="cart-link">
+          Keranjang <span class="cart-badge" id="cartCount" aria-label="Jumlah item">0</span>
+        </a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="https://wa.me/6281234567890?text=Halo%20Designap%2C%20saya%20ingin%20pesan%20paket%20desain." target="_blank" class="btn btn-wa">Order WhatsApp</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-header reveal">
+          <h2>Pilih Paket Sesuai Kebutuhanmu</h2>
+          <p>Semua paket bisa dikustom sesuai brief dan budget.</p>
+        </div>
+
+        <div class="pricing-toggle reveal">
+          <span class="toggle-label active" data-billing="single">Per Project</span>
+          <div class="toggle-switch" id="billingToggle">
+            <div class="toggle-circle"></div>
+          </div>
+          <span class="toggle-label" data-billing="bundle">Paket Bundle</span>
+        </div>
+
+        <div class="pricing-grid" id="pricingGrid">
+          <div class="pricing-card reveal" data-plan="single">
+            <div class="badge">Starter</div>
+            <h3>Paket Basic Logo</h3>
+            <p class="price">IDR 250K</p>
+            <ul>
+              <li>1 konsep utama logo</li>
+              <li>Revisi 1–2x minor</li>
+              <li>File PNG & JPG</li>
+              <li>Estimasi 2–3 hari</li>
+            </ul>
+            <button class="btn primary full" type="button"
+              data-add-to-cart
+              data-id="basic-logo"
+              data-name="Paket Basic Logo"
+              data-price="250000">
+              Tambah ke Keranjang
+            </button>
+            <a href="https://wa.me/6281234567890?text=Halo%20Designap%2C%20saya%20minat%20Paket%20Basic%20Logo." 
+               target="_blank" class="btn ghost full">
+              Tanya via WhatsApp
+            </a>
+          </div>
+
+          <div class="pricing-card featured reveal" data-plan="single">
+            <div class="badge badge-hot">Paling Favorit</div>
+            <h3>Paket Branding Kit</h3>
+            <p class="price">IDR 550K</p>
+            <ul>
+              <li>Logo utama + variasi</li>
+              <li>Palet warna & tipografi</li>
+              <li>Mockup simple (kartu nama / kemasan)</li>
+              <li>Revisi fleksibel (wajar)</li>
+            </ul>
+            <button class="btn primary full" type="button"
+              data-add-to-cart
+              data-id="branding-kit"
+              data-name="Paket Branding Kit"
+              data-price="550000">
+              Tambah ke Keranjang
+            </button>
+            <a href="https://wa.me/6281234567890?text=Halo%20Designap%2C%20saya%20minat%20Paket%20Branding%20Kit." 
+               target="_blank" class="btn ghost full">
+              Tanya via WhatsApp
+            </a>
+          </div>
+
+          <div class="pricing-card reveal" data-plan="single">
+            <div class="badge">Premium</div>
+            <h3>Paket Motion Intro</h3>
+            <p class="price">IDR 450K</p>
+            <ul>
+              <li>Intro YouTube 5–10 detik</li>
+              <li>Animasi logo / title</li>
+              <li>Format MP4 Full HD</li>
+              <li>Revisi 2–3x</li>
+            </ul>
+            <button class="btn primary full" type="button"
+              data-add-to-cart
+              data-id="motion-intro"
+              data-name="Paket Motion Intro"
+              data-price="450000">
+              Tambah ke Keranjang
+            </button>
+            <a href="https://wa.me/6281234567890?text=Halo%20Designap%2C%20saya%20minat%20Paket%20Motion%20Intro." 
+               target="_blank" class="btn ghost full">
+              Tanya via WhatsApp
+            </a>
+          </div>
+
+          <div class="pricing-card reveal" data-plan="bundle" style="display:none">
+            <div class="badge badge-hot">Bundle Hemat</div>
+            <h3>Logo + Branding Kit</h3>
+            <p class="price">IDR 750K</p>
+            <ul>
+              <li>Logo utama + alternates</li>
+              <li>Brand guideline singkat (PDF)</li>
+              <li>Mockup digital untuk sosmed</li>
+              <li>Revisi fleksibel sampai fix</li>
+            </ul>
+            <button class="btn primary full" type="button"
+              data-add-to-cart
+              data-id="bundle-logo-branding"
+              data-name="Bundle Logo + Branding Kit"
+              data-price="750000">
+              Tambah ke Keranjang
+            </button>
+            <a href="https://wa.me/6281234567890?text=Halo%20Designap%2C%20saya%20minat%20Bundle%20Logo%20%2B%20Branding%20Kit." 
+               target="_blank" class="btn ghost full">
+              Tanya via WhatsApp
+            </a>
+          </div>
+
+          <div class="pricing-card reveal" data-plan="bundle" style="display:none">
+            <div class="badge">Sosmed Pack</div>
+            <h3>Konten Instagram 12 Post</h3>
+            <p class="price">IDR 650K</p>
+            <ul>
+              <li>12 desain feed (static)</li>
+              <li>Template mudah di-edit</li>
+              <li>Copy basic (judul & highlight)</li>
+              <li>Revisi layout 2x</li>
+            </ul>
+            <button class="btn primary full" type="button"
+              data-add-to-cart
+              data-id="ig-12-post"
+              data-name="Konten Instagram 12 Post"
+              data-price="650000">
+              Tambah ke Keranjang
+            </button>
+            <a href="https://wa.me/6281234567890?text=Halo%20Designap%2C%20saya%20minat%20Bundle%20Konten%20Instagram%2012%20Post." 
+               target="_blank" class="btn ghost full">
+              Tanya via WhatsApp
+            </a>
+          </div>
+
+          <div class="pricing-card reveal" data-plan="bundle" style="display:none">
+            <div class="badge">Custom</div>
+            <h3>Paket Custom</h3>
+            <p class="price">By Request</p>
+            <ul>
+              <li>Mix logo, branding, konten, dan motion</li>
+              <li>Durasi & output fleksibel</li>
+              <li>Dibuat sesuai budget</li>
+              <li>Ideal untuk project besar</li>
+            </ul>
+            <a href="https://wa.me/6281234567890?text=Halo%20Designap%2C%20saya%20ingin%20buat%20Paket%20Custom." 
+               target="_blank" class="btn primary full">
+              Diskusi Paket Custom
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="section-header reveal">
+          <h2>Cuma Punya Budget Tertentu?</h2>
+          <p>Tenang, tinggal bilang saja budget-nya, nanti dibantu carikan opsi terbaik.</p>
+        </div>
+        <div class="budget-box reveal">
+          <p>Masukin range budget, lalu kirim via WhatsApp:</p>
+          <ul>
+            <li><strong>&lt; 300K</strong> → Desain sederhana / 1 item.</li>
+            <li><strong>300K – 700K</strong> → Logo + sedikit branding / beberapa konten.</li>
+            <li><strong>&gt; 700K</strong> → Bundle lengkap atau project custom.</li>
+          </ul>
+          <a href="https://wa.me/6281234567890?text=Halo%20Designap%2C%20budget%20saya%20sekitar%20..." 
+             target="_blank" class="btn ghost">
+            Kirim Budget via WhatsApp
+          </a>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="cta-inner reveal">
+          <h2>Sudah Ada Brief Siap?</h2>
+          <p>Kirim sekarang, biar bisa langsung dihitung estimasi harga & timeline.</p>
+          <a href="https://wa.me/6281234567890?text=Halo%20Designap%2C%20ini%20brief%20project%20saya%3A%20..." 
+             target="_blank" 
+             class="btn primary large">
+            Kirim Brief via WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Designap. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keranjang - Designap</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="navbar">
+      <div class="logo">Design<span>ap</span></div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="packages.html">Paket</a>
+        <a href="cart.html" class="active cart-link">
+          Keranjang <span class="cart-badge" id="cartCount" aria-label="Jumlah item">0</span>
+        </a>
+        <a href="https://wa.me/6281234567890?text=Halo%20Designap%2C%20saya%20ingin%20pesan%20paket%20desain." target="_blank" class="btn btn-wa">Order WhatsApp</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-header reveal">
+          <h2>Keranjang</h2>
+          <p>Periksa pesananmu. Klik bayar untuk langsung membuka QRIS via Pakasir (tanpa API key).</p>
+        </div>
+
+        <div class="cart-layout reveal">
+          <div class="card cart-card">
+            <div id="cartEmpty" class="cart-empty" style="display:none;">
+              <p>Keranjang kamu masih kosong.</p>
+              <a href="packages.html" class="btn primary">Lihat Paket</a>
+            </div>
+
+            <div id="cartContent" style="display:none;">
+              <div class="cart-table" id="cartTable"></div>
+
+              <div class="cart-actions">
+                <a href="packages.html" class="btn ghost">Tambah Paket</a>
+                <button class="btn danger" id="clearCartBtn" type="button">Kosongkan Keranjang</button>
+              </div>
+            </div>
+          </div>
+
+          <aside class="card cart-summary" id="cartSummary" style="display:none;">
+            <h3>Ringkasan</h3>
+            <div class="summary-row">
+              <span>Total</span>
+              <strong id="cartTotal">Rp0</strong>
+            </div>
+
+            <div class="summary-divider"></div>
+<button class="btn primary full" id="payNowBtn" type="button">
+              Checkout
+            </button>
+
+            <a href="checkout.html" class="btn ghost full">Checkout (opsional)</a>
+
+            <p class="hint" style="margin-top:10px;">
+              Pembayaran akan diarahkan ke Pakasir dan langsung menampilkan QRIS.
+            </p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Designap. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

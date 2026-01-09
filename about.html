@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Designap</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="navbar">
+      <div class="logo">Design<span>ap</span></div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="packages.html">Paket</a>
+        <a href="cart.html" class="cart-link">
+          Keranjang <span class="cart-badge" id="cartCount" aria-label="Jumlah item">0</span>
+        </a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="https://wa.me/6281234567890?text=Halo%20Designap%2C%20saya%20ingin%20pesan%20jasa%20desain." target="_blank" class="btn btn-wa">Order WhatsApp</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="section about-hero">
+        <div class="section-header reveal">
+          <h2>Tentang Designap</h2>
+          <p>Studio desain personal dengan pendekatan profesional namun tetap santai.</p>
+        </div>
+        <div class="about-layout">
+          <div class="about-text reveal">
+            <p>
+              Designap berawal dari passion di dunia desain grafis dan editing video. 
+              Fokus utamanya adalah membantu UMKM, brand personal, dan konten kreator punya tampilan visual yang lebih rapi, modern, dan punya karakter.
+            </p>
+            <p>
+              Pendekatanku simple: desain yang bagus bukan cuma “keren dilihat”, tapi juga fungsional, mudah dipahami, dan relevan dengan target audiens.
+            </p>
+            <ul class="about-list">
+              <li>Fokus ke detail: layout, warna, dan tipografi yang rapi.</li>
+              <li>Komunikasi santai, tapi tetap profesional dan jelas.</li>
+              <li>Workflow yang transparan dari awal sampai akhir.</li>
+            </ul>
+          </div>
+          <div class="about-panel reveal">
+            <div class="about-card">
+              <h3>Skill Utama</h3>
+              <ul>
+                <li>Logo & Brand Identity</li>
+                <li>Social Media Design</li>
+                <li>Motion Graphic Basic–Intermediate</li>
+                <li>Thumbnail & YouTube Assets</li>
+                <li>UI sederhana untuk landing page</li>
+              </ul>
+            </div>
+            <div class="about-card">
+              <h3>Tools yang Dipakai</h3>
+              <ul>
+                <li>Adobe Photoshop & Illustrator</li>
+                <li>Adobe After Effects & Premiere</li>
+                <li>Figma / Web-based tools</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="section-header reveal">
+          <h2>Kenapa Harus Designap?</h2>
+        </div>
+        <div class="benefit-grid">
+          <div class="benefit-card reveal">
+            <h3>Fast Response</h3>
+            <p>Chat di WhatsApp dibalas cepat, sehingga revisi dan approval jalan terus tanpa nunggu lama.</p>
+          </div>
+          <div class="benefit-card reveal">
+            <h3>Flexible Style</h3>
+            <p>Bisa menyesuaikan style desain sesuai niche-mu: playful, minimal, elegant, atau bold.</p>
+          </div>
+          <div class="benefit-card reveal">
+            <h3>Value for Money</h3>
+            <p>Harga disesuaikan dengan kebutuhan, bukan sekadar template asal jadi.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="cta-inner reveal">
+          <h2>Mau Diskusi Dulu?</h2>
+          <p>Ceritain dulu aja kebutuhan dan budget-mu, nanti kita bantu carikan solusi yang pas.</p>
+          <a href="https://wa.me/6281234567890?text=Halo%20Designap%2C%20saya%20ingin%20diskusi%20dulu%20soal%20desain." 
+             target="_blank" 
+             class="btn primary large">
+            Chat via WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Designap. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
